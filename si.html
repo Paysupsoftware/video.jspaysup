@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+  <style>
+    /* Ocultar los controles inferiores del video */
+    #my-video video::-webkit-media-controls-panel {
+      display: none !important;
+    }
+    
+     
+    #my-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50%;
+      object-fit: cover; 
+       text-align: center;
+    }
+
+ 
+  </style> 
+
+ <video  id="my-video" class="video-js" data-setup='{"controls": true, "autoplay": true}' oncontextmenu="return false;"  >
+ <source src="https://z1.pe/writable/uploads/1709001522_c8a42e681eb0c01f8cf7.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      Para ver este video, habilite JavaScript y actualice a un navegador web que
+      <a href="https://videojs.com/html5-video-support/" target="_blank">soporte video HTML5</a>.
+    </p>
+  </video>
+  
+</div> 
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+</html>
